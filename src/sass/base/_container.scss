@@ -1,0 +1,22 @@
+@import '../utils/mixins';
+
+.container {
+  padding-left: 25px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 192, 192);
+
+  @include mq(tablet-only) {
+    padding-left: 25px;
+    padding-right: 10px;
+    background-color: rgb(154, 172, 255);
+  }
+
+  @include mq(desktop) {
+    max-width: 1440px;
+    padding-left: 64px;
+    padding-right: 54px;
+    background-color: rgb(212, 255, 223);
+  }
+}
