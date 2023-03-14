@@ -1,0 +1,148 @@
+.completed {
+  display: none;
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 192px;
+  background-color: $second-background-color;
+
+  @include mq(tablet) {
+    display: block;
+  }
+
+  @include mq(desktop) {
+    padding-top: 87px;
+    padding-bottom: 205px;
+  }
+}
+
+.completed__title {
+  max-width: 817px;
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: $main-text-color;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tablet) {
+    font-size: 48px;
+    margin-bottom: 87px;
+  }
+
+  @include mq(desktop) {
+    max-width: 821px;
+  }
+}
+
+.completed__list {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+
+  @include mq(desktop) {
+    gap: 200px;
+  }
+}
+
+.completed__item {
+  position: relative;
+
+  &:nth-child(3n + 1) {
+    padding: 35px 50px;
+    background: $background-color;
+    box-shadow: 0 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0;
+  }
+
+  &:nth-child(2n) {
+    position: relative;
+    bottom: -100px;
+  }
+}
+
+.completed__item-title {
+  margin-bottom: 7px;
+  font-family: $font-family-title, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: $main-text-color;
+}
+
+.completed__item-wrapper {
+  position: relative;
+  background: $background-color;
+  box-shadow: 0 13px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 40px 0;
+  padding: 35px 50px;
+  z-index: 100;
+}
+
+.decore1 {
+  position: absolute;
+  top: 70px;
+  right: -40px;
+  width: 40px;
+  height: 120px;
+  border-top: 1px $decore-el-color solid;
+  border-right: 1px $decore-el-color solid;
+
+  @include mq(desktop) {
+    top: 90px;
+    right: -100px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.decore2 {
+  position: absolute;
+  top: -10px;
+  right: -50px;
+  width: 305px;
+  height: 100px;
+  border-bottom: 1px $decore-el-color solid;
+  border-right: 1px $decore-el-color solid;
+  z-index: 0;
+
+  @include mq(desktop) {
+    top: -10px;
+    right: -100px;
+    width: 385px;
+    height: 100px;
+  }
+}
+
+.decore3 {
+  position: absolute;
+  top: 90px;
+  right: -35px;
+  width: 250px;
+  height: 120px;
+  border-top: 1px $decore-el-color solid;
+  border-right: 1px $decore-el-color solid;
+  z-index: 1;
+
+  @include mq(desktop) {
+    top: 90px;
+    right: -100px;
+    width: 385px;
+    height: 100px;
+  }
+}
+
+.decore4 {
+  position: absolute;
+  top: 110px;
+  left: -45px;
+  width: 45px;
+  height: 100px;
+  border-top: 1px $decore-el-color solid;
+
+  @include mq(desktop) {
+    top: 90px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+  }
+}

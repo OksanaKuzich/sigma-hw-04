@@ -1,0 +1,94 @@
+.testimonials {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 63px;
+  padding-bottom: 100px;
+
+  @include mq(tablet) {
+    padding-bottom: 309px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 133px;
+    padding-bottom: 245px;
+  }
+}
+
+.testimonials__subtitle {
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+
+  @include mq(tablet) {
+    font-size: 20px;
+  }
+}
+
+.testimonials__title {
+  font-weight: 500;
+  margin-bottom: 122px;
+  font-size: 28px;
+  line-height: 1.5;
+  color: $main-text-color;
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 99px;
+  }
+}
+
+.testimonials__list {
+  display: flex;
+
+  @include mq(desktop) {
+    gap: 155px;
+  }
+}
+
+.testimonials__item {
+  text-align: left;
+  position: relative;
+  background: $background-color;
+  box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+  border-radius: 70px 0;
+  padding: 37px 42px 55px 95px;
+  font-family: $font-family-title, sans-serif;
+
+  @include mq(desktop) {
+    padding: 41px 42px 60px 95px;
+  }
+}
+
+.testimonials__img {
+  position: absolute;
+  top: 30px;
+  left: -61px;
+  border-radius: 35px 0;
+}
+
+.testimonials__card-name {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.37;
+}
+
+.testimonials__card-name--bolt {
+  font-weight: 700;
+  font-size: 24px;
+  color: $main-text-color;
+}
+
+.testimonials__card-text {
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.testimonials__quotes {
+  position: absolute;
+  top: 40px;
+  right: 52px;
+}

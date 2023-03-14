@@ -1,0 +1,168 @@
+.about {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @include mq(tablet) {
+    padding: 0 13px 219px 37px;
+    gap: 145px;
+  }
+
+  @include mq(desktop) {
+    padding: 0 13px 202px 58px;
+    gap: 200px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+
+  @include mq(mobile-only) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mq(tablet) {
+    gap: 65px;
+  }
+
+  @include mq(desktop) {
+    gap: 119px;
+  }
+}
+
+.about__img {
+  @include mq(mobile-only) {
+    width: 330px;
+  }
+}
+
+.about__img--thumb {
+  display: flex;
+  justify-content: center;
+}
+
+.about__content {
+  font-weight: 500;
+  max-width: 300px;
+
+  @include mq(tablet) {
+    max-width: 433px;
+  }
+
+  @include mq(desktop) {
+    max-width: 545px;
+  }
+}
+
+.about__subtitle {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+
+  @include mq(tablet) {
+    font-size: 20px;
+    margin-bottom: 59px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 29px;
+  }
+}
+
+.about__title {
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: $main-text-color;
+
+  @include mq(tablet) {
+    font-size: 40px;
+    line-height: 1.42;
+  }
+
+  @include mq(desktop) {
+    font-size: 48px;
+    line-height: 1.19;
+    margin-bottom: 28px;
+  }
+}
+
+.about__text {
+  font-family: $font-family-title, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.67;
+  margin-bottom: 20px;
+
+  @include mq(mobile-only) {
+    max-width: 300px;
+  }
+
+  @include mq(tablet) {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  @include mq(desktop) {
+    width: 100%;
+  }
+}
+
+.about__btn {
+  font-weight: 600;
+  font-size: 16px;
+  color: $background-color;
+}
+
+.about__20--wrapper {
+  max-width: 400px;
+
+  @include mq(tablet) {
+    width: 400px;
+  }
+
+  @include mq(desktop) {
+    width: 500px;
+  }
+}
+
+.about__20 {
+  font-family: $font-family-title, sans-serif;
+  font-weight: 700;
+  font-size: 158px;
+  line-height: 1;
+  color: transparent;
+  background-clip: text;
+  background-image: url('../img/20-backgroung-m.jpg');
+
+  @include mq(tablet) {
+    font-size: 288px;
+  }
+
+  @include mq(desktop) {
+    font-size: 288px;
+    background-image: url('../img/20-backgroung-l.jpg');
+  }
+}
+
+.about20__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  color: $main-text-color;
+  margin-bottom: 20px;
+
+  @include mq(tablet) {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+}
