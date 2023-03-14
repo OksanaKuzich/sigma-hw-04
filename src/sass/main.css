@@ -30,7 +30,7 @@ ul {
   margin: 0;
 }
 
-.img--no-gap {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -51,6 +51,7 @@ button {
 }
 
 .container {
+  max-width: 760px;
   padding-left: 25px;
   padding-right: 10px;
   margin-left: auto;
@@ -59,6 +60,7 @@ button {
 }
 @media screen and (min-width: 1060px) and (max-width: 1439px) {
   .container {
+    max-width: 1060px;
     padding-left: 25px;
     padding-right: 10px;
     background-color: rgb(154, 172, 255);
@@ -74,7 +76,6 @@ button {
 }
 
 .header {
-  position: sticky;
   display: flex;
   align-items: center;
   padding-top: 50px;
@@ -203,26 +204,27 @@ button {
 
 .hero {
   display: flex;
-  gap: 15px;
+  gap: 13px;
   font-family: Open Sans, sans-serif;
   color: #646464;
   font-weight: 600;
-  justify-content: space-evenly;
+  align-items: center;
 }
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 620px) {
   .hero {
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 1059px) {
-  .hero {
-    text-align: center;
   }
 }
 @media screen and (min-width: 1060px) {
   .hero {
     flex-direction: row;
-    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    gap: 13px;
+    align-items: left;
   }
 }
 
@@ -291,6 +293,11 @@ button {
   font-size: 14px;
   line-height: 1.67;
 }
+@media screen and (min-width: 1060px) {
+  .hero__content {
+    font-size: 18px;
+  }
+}
 
 .hero__btn {
   font-weight: 700;
@@ -298,24 +305,15 @@ button {
   color: #fff;
 }
 
-.hero__img {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 620px) {
   .hero__img {
-    display: block;
-    width: 737px;
+    width: 330px;
   }
 }
 
-.hero__img--tablet {
-  max-width: 415px;
-  height: auto;
-}
-@media screen and (min-width: 1440px) {
-  .hero__img--tablet {
-    display: none;
-  }
+.hero__img--thumb {
+  display: flex;
+  justify-content: center;
 }
 
 .visually-hidden {

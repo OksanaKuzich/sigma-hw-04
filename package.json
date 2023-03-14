@@ -1,11 +1,11 @@
 {
-  "name": "sigma-hw-02",
+  "name": "sigma-hw-04",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://oksanakuzich.github.io/sigma-hw-02/",
+  "homepage": "https://oksanakuzich.github.io/sigma-hw-04/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /sigma-hw-02/"
+    "build": "parcel build src/*.html --public-url /sigma-hw-04/"
   },
   "repository": {
     "type": "git",

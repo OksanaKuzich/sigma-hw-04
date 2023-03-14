@@ -1,22 +1,23 @@
 .hero {
   display: flex;
-  gap: 15px;
+  gap: 13px;
   font-family: $font-family-title, sans-serif;
   color: $second-text-color;
   font-weight: 600;
-  justify-content: space-evenly;
+  align-items: center;
 
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 620px) {
     flex-direction: column;
-  }
-
-  @include mq(mobile-only) {
-    text-align: center;
   }
 
   @include mq(tablet) {
     flex-direction: row;
-    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  @include mq(desktop) {
+    gap: 13px;
+    align-items: left;
   }
 }
 
@@ -79,6 +80,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.67;
+
+  @include mq(tablet) {
+    font-size: 18px;
+  }
 }
 
 .hero__btn {
@@ -88,20 +93,12 @@
 }
 
 .hero__img {
-  display: none;
-
-  @include mq(desktop) {
-    display: block;
-    width: 737px;
-    // height: 645px;
+  @media screen and (max-width: 620px) {
+    width: 330px;
   }
 }
 
-.hero__img--tablet {
-  max-width: 415px;
-  height: auto;
-
-  @include mq(desktop) {
-    display: none;
-  }
+.hero__img--thumb {
+  display: flex;
+  justify-content: center;
 }

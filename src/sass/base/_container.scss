@@ -1,6 +1,7 @@
 @import '../utils/mixins';
 
 .container {
+  max-width: 760px;
   padding-left: 25px;
   padding-right: 10px;
   margin-left: auto;
@@ -8,6 +9,7 @@
   background-color: rgb(255, 192, 192);
 
   @include mq(tablet-only) {
+    max-width: 1060px;
     padding-left: 25px;
     padding-right: 10px;
     background-color: rgb(154, 172, 255);

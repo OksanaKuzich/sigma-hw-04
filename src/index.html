@@ -53,8 +53,13 @@
           </p>
           <button class="hero__btn btn" type="button">CONTACT</button>
         </div>
-        <img class="hero__img" src="./img/hero-l.png" />
-        <img class="hero__img--tablet" src="./img/hero-m.png" />
+        <div class="hero__img--thumb">
+          <picture>
+            <source srcset="./img/hero-l.png" media="(min-width: 1440px)" />
+            <source srcset="./img/hero-m.png" media="(max-width: 1439px)" />
+            <img class="hero__img" src="./img/hero-l.png" alt="decore room" />
+          </picture>
+        </div>
       </section>
       <section></section>
       <section></section>
