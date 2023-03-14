@@ -239,7 +239,7 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .hero__content-wrapper {
-    width: 621px;
+    max-width: 621px;
   }
 }
 
