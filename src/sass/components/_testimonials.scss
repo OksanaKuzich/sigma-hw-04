@@ -5,12 +5,12 @@
   padding-bottom: 100px;
 
   @include mq(tablet) {
-    padding-bottom: 309px;
+    padding-bottom: 110px;
   }
 
   @include mq(desktop) {
     padding-top: 133px;
-    padding-bottom: 245px;
+    padding-bottom: 145px;
   }
 }
 
