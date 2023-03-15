@@ -42,6 +42,29 @@
   text-align: left;
   font-family: $font-family-title, sans-serif;
   max-width: 670px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  // for animation
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+// for animation
+@media (prefers-reduced-motion: no-preference) {
+  .news__item {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+// for animation
+.news__transition {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .news__img {

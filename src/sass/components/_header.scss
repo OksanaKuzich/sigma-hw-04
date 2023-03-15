@@ -3,10 +3,17 @@
 .header {
   display: flex;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
   font-family: $font-family-title, sans-serif;
   justify-content: space-between;
+}
+
+.header--sticky {
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $background-color;
 
   @include mq(tablet-only) {
     padding-top: 101px;
@@ -120,4 +127,14 @@
       border-radius: 7px;
     }
   }
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: $accent-color;
+  transform: translateY(-50%);
 }

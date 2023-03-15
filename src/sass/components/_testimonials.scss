@@ -1,8 +1,7 @@
 .testimonials {
   text-align: center;
   font-weight: 500;
-  padding-top: 63px;
-  padding-bottom: 100px;
+  padding: 63px 0 100px;
 
   @include mq(tablet) {
     padding-bottom: 110px;
@@ -42,16 +41,13 @@
 }
 
 .testimonials__list {
-  display: flex;
-
-  @include mq(desktop) {
-    gap: 155px;
-  }
+  padding: 60px 40px 40px 60px;
 }
 
 .testimonials__item {
-  text-align: left;
   position: relative;
+  width: 571px;
+  text-align: left;
   background: $background-color;
   box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
   border-radius: 70px 0;
@@ -91,4 +87,62 @@
   position: absolute;
   top: 40px;
   right: 52px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin-top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: $second-text-color;
+  background: $background-color;
+  box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+
+  &::after {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  &:hover,
+  &:focus {
+    color: $background-color;
+    background: $accent-color;
+  }
+}
+
+.swiper-button-next {
+  top: 6px;
+  right: 6vw;
+
+  @include mq(tablet) {
+    top: 6px;
+    right: 66px;
+  }
+
+  @include mq(desktop) {
+    top: 6px;
+    right: 66px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  top: 6px;
+  left: 60vw;
+
+  @include mq(tablet) {
+    top: 6px;
+    left: 900px;
+  }
+
+  @include mq(desktop) {
+    top: 6px;
+    left: 1250px;
+  }
+}
+
+.swiper.mySwiper {
+  margin-left: auto;
+  margin-right: auto;
 }

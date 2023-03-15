@@ -19,3 +19,7 @@ body {
     background-color: $btn-bg-color;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

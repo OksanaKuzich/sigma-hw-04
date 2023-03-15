@@ -18,31 +18,38 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header class="container header">
-      <a class="header__link-logo" href="./index.html">
-        <img class="header__logo" src="./img/logo.png" />
-      </a>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a>HOME</a></li>
-          <li class="header__nav-item"><a>PROJECT</a></li>
-          <li class="header__nav-item"><a>SERVICES</a></li>
-          <li class="header__nav-item"><a>ABOUT</a></li>
-          <li class="header__nav-item"><a>BLOG</a></li>
-          <li class="header__nav-item"><a>SHOP</a></li>
-          <li class="header__nav-item"><a>CONTACT</a></li>
-        </ul>
-      </nav>
-      <button class="header__btn" type="button">Sign Up</button>
-      <button type="button">
-        <img class="header__menu-hamburger" src="./img/menu-hamburger.svg" />
-      </button>
+    <header class="container header--sticky">
+      <div class="header">
+        <a class="header__link-logo" href="./index.html">
+          <img class="header__logo" src="./img/logo.png" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#hero">HOME</a></li>
+            <li class="header__nav-item"><a href="#completed">PROJECT</a></li>
+            <li class="header__nav-item"><a href="#service">SERVICES</a></li>
+            <li class="header__nav-item"><a href="#about">ABOUT</a></li>
+            <li class="header__nav-item"><a href="#news">BLOG</a></li>
+            <li class="header__nav-item"><a href="#signUp">SHOP</a></li>
+            <li class="header__nav-item"><a href="#footer">CONTACT</a></li>
+          </ul>
+        </nav>
+        <button class="header__btn" type="button">Sign Up</button>
+        <button type="button">
+          <img class="header__menu-hamburger" src="./img/menu-hamburger.svg" />
+        </button>
+      </div>
+      <div class="progress-bar" id="progressBar"></div>
     </header>
     <main>
-      <section class="container hero">
+      <section class="container hero" id="hero">
         <div class="hero__content-wrapper">
           <p class="hero__subtitle">MODERN INTERIOR</p>
           <h1 class="hero__title">Create Your Interior Design.</h1>
@@ -61,7 +68,7 @@
           </picture>
         </div>
       </section>
-      <section class="container service">
+      <section class="container service" id="service">
         <p class="service__subtitle">WHAT WE DO</p>
         <h2 class="service__title">Our Service</h2>
         <ul class="service__btn-list">
@@ -102,7 +109,7 @@
           </li>
         </ul>
       </section>
-      <section class="container about">
+      <section class="container about" id="about">
         <div class="about__wrapper">
           <div class="about__img--thumb">
             <picture>
@@ -150,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section class="container completed">
+      <section class="container completed" id="completed">
         <h2 class="completed__title">
           3000+ Completed Work Which WE have Successfully Done
         </h2>
@@ -181,51 +188,135 @@
           </li>
         </ul>
       </section>
-      <section class="container testimonials">
+      <section class="container testimonials" id="testimonials">
         <p class="testimonials__subtitle">TESTIMONIALS</p>
         <h2 class="testimonials__title">Client says about us</h2>
-        <ul class="testimonials__list">
-          <li class="testimonials__item">
-            <img
-              class="testimonials__img"
-              src="./img/card1.png"
-              alt="Louis Saville"
-            />
-            <p class="testimonials__card-name">
-              <span class="testimonials__card-name--bolt">Louis Saville</span>
-              /CEO at Google inc
-            </p>
-            <p class="testimonials__card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <img class="testimonials__quotes" src="./img/quotes.png"/
-            alt="quotes">
-          </li>
-          <li class="testimonials__item">
-            <img
-              class="testimonials__img"
-              src="./img/card2.png"
-              alt="Rekha Varadwaz"
-            />
-            <p class="testimonials__card-name">
-              <span class="testimonials__card-name--bolt">Rekha Varadwaz </span>
-              /Manager at Nike inc
-            </p>
-            <p class="testimonials__card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <img class="testimonials__quotes" src="./img/quotes.png"/
-            alt="quotes">
-          </li>
-        </ul>
+        <div class="swiper mySwiper">
+          <ul class="testimonials__list swiper-wrapper">
+            <li class="testimonials__item swiper-slide">
+              <img
+                class="testimonials__img"
+                src="./img/card1.png"
+                alt="Louis Saville"
+              />
+              <p class="testimonials__card-name">
+                <span class="testimonials__card-name--bolt"
+                  >1 Louis Saville</span
+                >
+                /CEO at Google inc
+              </p>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <img class="testimonials__quotes" src="./img/quotes.png"/
+              alt="quotes">
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <img
+                class="testimonials__img"
+                src="./img/card2.png"
+                alt="Rekha Varadwaz"
+              />
+              <p class="testimonials__card-name">
+                <span class="testimonials__card-name--bolt"
+                  >2 Rekha Varadwaz
+                </span>
+                /Manager at Nike inc
+              </p>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <img class="testimonials__quotes" src="./img/quotes.png"/
+              alt="quotes">
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <img
+                class="testimonials__img"
+                src="./img/card1.png"
+                alt="Louis Saville"
+              />
+              <p class="testimonials__card-name">
+                <span class="testimonials__card-name--bolt"
+                  >3 Louis Saville</span
+                >
+                /CEO at Google inc
+              </p>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <img class="testimonials__quotes" src="./img/quotes.png"/
+              alt="quotes">
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <img
+                class="testimonials__img"
+                src="./img/card2.png"
+                alt="Rekha Varadwaz"
+              />
+              <p class="testimonials__card-name">
+                <span class="testimonials__card-name--bolt"
+                  >4 Rekha Varadwaz
+                </span>
+                /Manager at Nike inc
+              </p>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <img class="testimonials__quotes" src="./img/quotes.png"/
+              alt="quotes">
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <img
+                class="testimonials__img"
+                src="./img/card1.png"
+                alt="Louis Saville"
+              />
+              <p class="testimonials__card-name">
+                <span class="testimonials__card-name--bolt"
+                  >5 Louis Saville</span
+                >
+                /CEO at Google inc
+              </p>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <img class="testimonials__quotes" src="./img/quotes.png"/
+              alt="quotes">
+            </li>
+            <li class="testimonials__item swiper-slide">
+              <img
+                class="testimonials__img"
+                src="./img/card2.png"
+                alt="Rekha Varadwaz"
+              />
+              <p class="testimonials__card-name">
+                <span class="testimonials__card-name--bolt"
+                  >6 Rekha Varadwaz
+                </span>
+                /Manager at Nike inc
+              </p>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <img class="testimonials__quotes" src="./img/quotes.png"/
+              alt="quotes">
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </section>
-      <section class="container news">
+      <section class="container news" id="news">
         <p class="news__subtitle">LETEST NEWS</p>
         <h2 class="news__title">From Our Blog</h2>
         <ul class="news__list">
-          <li class="news__item">
+          <li class="news__item news-transition">
             <img class="news__img" src="./img/news1.png" />
             <p class="news__name">2020 Interior Design Trends</p>
             <p class="news__content">
@@ -236,7 +327,7 @@
               CONTINUE READING....
             </button>
           </li>
-          <li class="news__item">
+          <li class="news__item news-transition">
             <img class="news__img" src="./img/news2.png" />
             <p class="news__name">28 Notable Product at ARC Interior Design</p>
             <p class="news__content">
@@ -249,7 +340,7 @@
           </li>
         </ul>
       </section>
-      <section class="container signUp">
+      <section class="container signUp" id="signUp">
         <form class="signUp__form">
           <h2 class="signUp__title">DON’T FORGET TO SIGN UP</h2>
           <p class="signUp__subtitle">
@@ -257,18 +348,36 @@
             releases with our newsletter.
           </p>
           <div class="signUp__input-wrapper">
-            <input class="signUp__name" placeholder="Enter your name....." />
-            <input class="signUp__name" placeholder="Enter your surname....." />
+            <input
+              name="name"
+              class="signUp__name"
+              placeholder="Enter your name....."
+              pattern="^[A-ZА-ЯЁ]{1}[a-zа-яё]+$"
+              type="text"
+              required
+            />
+            <input
+              name="surname"
+              class="signUp__name"
+              placeholder="Enter your surname....."
+              pattern="^[A-ZА-ЯЁ]{1}[a-zа-яё]+$"
+              type="text"
+              required
+            />
           </div>
           <input
+            name="email"
             class="signUp__name email"
             placeholder="Enter your e-mail....."
+            type="email"
+            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+            required
           />
           <button class="about__btn btn submit" type="submit">SUBSCRIBE</button>
         </form>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="container footer">
         <div class="footer__wrapper">
           <div class="footer__logo-block">
@@ -350,5 +459,6 @@
       </div>
     </footer>
     <script type="module" src="./JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
