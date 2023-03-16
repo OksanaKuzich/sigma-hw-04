@@ -73,21 +73,37 @@
         <h2 class="service__title">Our Service</h2>
         <ul class="service__btn-list">
           <li class="service__btn-item">
-            <button class="service__btn" type="button">ALL</button>
+            <button
+              class="service__btn active"
+              type="button"
+              data-category="all"
+            >
+              ALL
+            </button>
           </li>
           <li class="service__btn-item">
-            <button class="service__btn" type="button">INTERIOR DESIGN</button>
+            <button class="service__btn" type="button" data-category="design">
+              INTERIOR DESIGN
+            </button>
           </li>
           <li class="service__btn-item">
-            <button class="service__btn" type="button">ARCHITECTURE</button>
+            <button
+              class="service__btn"
+              type="button"
+              data-category="architecture"
+            >
+              ARCHITECTURE
+            </button>
           </li>
           <li class="service__btn-item">
-            <button class="service__btn" type="button">PLANNING</button>
+            <button class="service__btn" type="button" data-category="planning">
+              PLANNING
+            </button>
           </li>
         </ul>
         <ul class="service__card-list">
           <li class="service__card-item">
-            <h3 class="service__card-title">Interior Design1</h3>
+            <h3 class="service__card-title">Interior Design 1</h3>
             <p class="service__card-content">
               Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
               tempor incididunt ut labore.
@@ -460,5 +476,6 @@
     </footer>
     <script type="module" src="./JS/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   </body>
 </html>
