@@ -24,6 +24,7 @@ const allServices = arr => {
 
 const serv = async () => {
   const services = await import('../data/service.json');
+  console.log('First script run');
 
   const firstRender = allServices(services);
   servicesMarkup(firstRender);
@@ -31,19 +32,18 @@ const serv = async () => {
   const btns = document.querySelectorAll('.service__btn');
 
   const filterData = e => {
-    btns.forEach(item => item.classList.remove('active'));
-    e.target.classList.add('active');
-
     const filterWord = e.target.dataset.category;
     let filteredArray = [];
-
-    console.log(e.target.classList[1]);
-
-    if (filterWord === 'all' || e.target.classList[1] === 'active') {
+    if (filterWord === 'all' || [...e.target.classList].includes('active')) {
+      e.target.classList.remove('active');
+      btns[0].classList.add('active');
       filteredArray = allServices(services);
     } else {
+      btns.forEach(item => item.classList.remove('active'));
+      e.target.classList.add('active');
       filteredArray = services.filter(item => item.category === filterWord);
     }
+
     servicesMarkup(filteredArray);
   };
 
