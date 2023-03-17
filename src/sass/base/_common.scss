@@ -8,6 +8,11 @@ body {
   color: $second-text-color;
 }
 
+.stopScroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .btn {
   background-color: $accent-color;
   padding: 10px 20px;
