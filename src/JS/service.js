@@ -24,7 +24,6 @@ const allServices = arr => {
 
 const serv = async () => {
   const services = await import('../data/service.json');
-  console.log('First script run');
 
   const firstRender = allServices(services);
   servicesMarkup(firstRender);
