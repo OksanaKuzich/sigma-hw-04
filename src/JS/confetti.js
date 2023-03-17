@@ -7,14 +7,14 @@ export default function frame(end) {
     particleCount: 2,
     angle: 60,
     spread: 55,
-    origin: { x: 0 },
+    origin: { x: 0, y: 1 },
     colors: colors,
   });
   confetti({
     particleCount: 2,
     angle: 120,
     spread: 55,
-    origin: { x: 1 },
+    origin: { x: 1, y: 1 },
     colors: colors,
   });
 
