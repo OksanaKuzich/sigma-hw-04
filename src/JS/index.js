@@ -7,4 +7,4 @@ import './service';
 import './inaction';
 import './preloader';
 import './weather/index';
-import './burgerMenu';
+import './mobileMenu';

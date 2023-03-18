@@ -1,63 +1,63 @@
 [
   {
     "id": "1",
-    "logo": "../img/service1.svg",
+    "logo": "../img/symbol-defs.svg#make-group",
     "title": "Interior Design 1",
     "category": "design",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "2",
-    "logo": "../img/service1.svg",
+    "logo": "../img/symbol-defs.svg#make-group",
     "title": "Interior Design 2",
     "category": "design",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "3",
-    "logo": "../img/service1.svg",
+    "logo": "../img/symbol-defs.svg#make-group",
     "title": "Interior Design 3",
     "category": "design",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "4",
-    "logo": "../img/service2.svg",
+    "logo": "../img/symbol-defs.svg#office",
     "title": "Architecture 1",
     "category": "architecture",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "5",
-    "logo": "../img/service2.svg",
+    "logo": "../img/symbol-defs.svg#office",
     "title": "Architecture 2",
     "category": "architecture",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "6",
-    "logo": "../img/service2.svg",
+    "logo": "../img/symbol-defs.svg#office",
     "title": "Architecture 3",
     "category": "architecture",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "7",
-    "logo": "../img/service3.svg",
+    "logo": "../img/symbol-defs.svg#calendar",
     "title": "Planning 1",
     "category": "planning",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "8",
-    "logo": "../img/service3.svg",
+    "logo": "../img/symbol-defs.svg#calendar",
     "title": "Planning 2",
     "category": "planning",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
   },
   {
     "id": "9",
-    "logo": "../img/service3.svg",
+    "logo": "../img/symbol-defs.svg#calendar",
     "title": "Planning 3",
     "category": "planning",
     "subtitle": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."

@@ -3,13 +3,17 @@ const servicesMarkup = arr => {
   const markUp = arr
     .map(
       item => `<li class="service__card-item">
-            <h3 class="service__card-title">${item.title}</h3>
-            <p class="service__card-content">
-              ${item.subtitle}
-            </p>
-          </li>`
+                <svg class="service__card-icon" viewBox="0 0 16 16">
+                  ${item.logo}
+                </svg>
+                <h3 class="service__card-title">${item.title}</h3>
+                <p class="service__card-content">
+                ${item.subtitle}
+                </p>
+              </li>`
     )
     .join('');
+  
   listEl.innerHTML = markUp;
 };
 

@@ -31,12 +31,18 @@ npm start
 ## Project libraries:
 
 - ### Bootstrap
-- ### Canvas-confetti
 - ### Chart.js
 - ### Date-fns
 - ### Lodash.debounce
 - ### Modern-normalize
 - ### Notiflix
+
+<br>
+
+## CDN modules:
+
+- ### Swiper
+- ### Canvas-confetti
 
 ---
 

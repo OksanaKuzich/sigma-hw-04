@@ -1,8 +1,3 @@
-.weather__blok {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
 .form {
   margin-left: auto;
   margin-right: auto;
@@ -13,26 +8,18 @@
   padding: 25px;
   max-width: 500px;
   text-align: center;
-  border: 1px #000 solid;
+  border: 1px $accent-second-color solid;
   border-radius: 5px;
+
+  &__inline &__control {
+    max-width: 300px;
+  }
 }
 
 .input:hover,
 .input:focus {
-  border-color: rgb(105, 105, 105);
+  border-color: $second-text-color;
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(85 85 85 / 60%);
-}
-
-.container__weather {
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-
-  border: 1px #000 solid;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(85 85 85 / 60%);
-  background: linear-gradient(135deg, #ffd0df 0%, #d6e5ff 100%);
 }
 
 .city__name {
@@ -75,9 +62,9 @@
   left: 0;
   padding: 5px 15px;
   max-width: 300px;
-  background-color: #fff;
+  background-color: $background-color;
   text-align: left;
-  border: 1px #000 solid;
+  border: 1px $accent-second-color solid;
   border-radius: 5px;
 }
 
@@ -85,31 +72,10 @@
   list-style: none;
   width: 250px;
   font-size: 12px;
-}
 
-.list:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.btn__list {
-  text-align: left;
-  border: none;
-  background-color: inherit;
-}
-
-.btn__list:hover,
-.btn__list:focus {
-  color: #bfd6ff;
-}
-
-.container__absolute {
-  position: relative;
-  margin-right: 15px;
-  max-width: 300px;
-}
-
-.form__inline .form__control {
-  max-width: 300px;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
 }
 
 .visually__hidden {
@@ -130,16 +96,25 @@
   background-color: inherit;
   padding: 0;
   width: 100px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $btn-bg-color;
+  }
 }
 
-.btn__more:hover,
-.btn__more:focus {
-  color: #bfd6ff;
-}
+.container {
+  &__absolute {
+    position: relative;
+    margin-right: 15px;
+    max-width: 300px;
+  }
 
-.container__diagram {
-  max-width: 500px;
-  height: 300px;
-  margin: 10px auto 0 auto;
-  display: none;
+  &__diagram {
+    max-width: 500px;
+    height: 300px;
+    margin: 10px auto 0 auto;
+    display: none;
+  }
 }

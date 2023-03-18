@@ -1,5 +1,163 @@
 .service {
   font-weight: 600;
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+
+    @include mq(mobile-only) {
+      margin-bottom: 15px;
+    }
+
+    @include mq(tablet-only) {
+      font-size: 20px;
+    }
+
+    @include mq(desktop) {
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+    color: $main-text-color;
+    margin-bottom: 35px;
+
+    @include mq(tablet-only) {
+      font-size: 40px;
+      line-height: 1.95;
+    }
+
+    @include mq(desktop) {
+      font-size: 48px;
+      line-height: 1.62;
+    }
+  }
+
+  &__btn {
+    font-weight: 700;
+    color: $background-color;
+    background-color: $accent-color;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    .active {
+      background-color: $background-color;
+      color: $accent-color;
+      border: 5px solid $accent-color;
+
+      @include mq(mobile-only) {
+        border: 1px solid $accent-color;
+      }
+    }
+
+    @include mq(tablet-only) {
+      width: 171px;
+      height: 46px;
+    }
+
+    @include mq(desktop) {
+      width: 203px;
+      height: 46px;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-family: $font-family-title, sans-serif;
+      font-size: 12px;
+      margin-bottom: 110px;
+
+      @media screen and (max-width: 620px) {
+        justify-content: center;
+      }
+
+      @include mq(tablet-only) {
+        gap: 36px;
+        font-size: 16px;
+      }
+
+      @include mq(desktop) {
+        gap: 76px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__card {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 27px;
+
+      @include mq(desktop) {
+        gap: 90px;
+        justify-content: flex-start;
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding: 15px 25px 30px 107px;
+      max-width: 470px;
+      font-family: $font-family-title;
+      background-color: $background-color;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+      border-radius: 60px 0;
+      transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $btn-bg-color;
+        color: $background-color;
+
+        .service__card-title {
+          color: $background-color;
+        }
+
+        .service__card-icon {
+          fill: $background-color;
+        }
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 20px;
+      left: 38px;
+      width: 40px;
+      height: 40px;
+      fill: $main-text-color;
+      transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      color: $main-text-color;
+      transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @include mq(tablet) {
+        font-size: 24px;
+      }
+    }
+
+    &-content {
+      font-size: 12px;
+
+      @include mq(tablet) {
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 .container.service {
@@ -21,95 +179,6 @@
   }
 }
 
-.service__subtitle {
-  font-size: 16px;
-  line-height: 1.4;
-
-  @include mq(mobile-only) {
-    margin-bottom: 15px;
-  }
-
-  @include mq(tablet-only) {
-    font-size: 20px;
-  }
-
-  @include mq(desktop) {
-    font-size: 20px;
-  }
-}
-
-.service__title {
-  font-weight: 500;
-  font-size: 28px;
-  color: $main-text-color;
-  margin-bottom: 35px;
-
-  @include mq(tablet-only) {
-    font-size: 40px;
-    line-height: 1.95;
-  }
-
-  @include mq(desktop) {
-    font-size: 48px;
-    line-height: 1.62;
-  }
-}
-
-.service__btn-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  font-family: $font-family-title, sans-serif;
-  font-size: 12px;
-  margin-bottom: 110px;
-
-  @media screen and (max-width: 620px) {
-    justify-content: center;
-  }
-
-  @include mq(tablet-only) {
-    gap: 36px;
-    font-size: 16px;
-  }
-
-  @include mq(desktop) {
-    gap: 76px;
-    font-size: 16px;
-  }
-}
-
-.service__btn {
-  font-weight: 700;
-  color: $background-color;
-  background-color: $accent-color;
-  border-radius: 20px;
-  width: 100px;
-  height: 30px;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus,
-  .active {
-    background-color: $background-color;
-    color: $accent-color;
-    border: 5px solid $accent-color;
-
-    @include mq(mobile-only) {
-      border: 1px solid $accent-color;
-    }
-  }
-
-  @include mq(tablet-only) {
-    width: 171px;
-    height: 46px;
-  }
-
-  @include mq(desktop) {
-    width: 203px;
-    height: 46px;
-  }
-}
-
 .active {
   background-color: $background-color;
   color: $accent-color;
@@ -117,57 +186,5 @@
 
   @include mq(mobile-only) {
     border: 1px solid $accent-color;
-  }
-}
-
-.service__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 27px;
-
-  @include mq(desktop) {
-    gap: 90px;
-    justify-content: flex-start;
-  }
-}
-
-.service__card-item {
-  padding: 15px 25px 30px 107px;
-  max-width: 470px;
-  font-family: $font-family-title;
-  background-color: $background-color;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
-  border-radius: 60px 0;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: $btn-bg-color;
-    color: $background-color;
-
-    .service__card-title {
-      color: $background-color;
-    }
-  }
-}
-
-.service__card-title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 18px;
-  color: $main-text-color;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @include mq(tablet) {
-    font-size: 24px;
-  }
-}
-
-.service__card-content {
-  font-size: 12px;
-
-  @include mq(tablet) {
-    font-size: 18px;
   }
 }

@@ -18,6 +18,81 @@
     gap: 13px;
     align-items: left;
   }
+
+  &__content-wrapper {
+    max-width: 387px;
+
+    @include mq(desktop) {
+      max-width: 621px;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.35;
+
+    @include mq(tablet) {
+      font-size: 20px;
+      padding-top: 73px;
+      margin-bottom: 22px;
+    }
+
+    @include mq(desktop) {
+      padding-top: 69px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    font-family: $font-family-main, sans-serif;
+    line-height: 1.08;
+    color: $main-text-color;
+    font-size: 28px;
+    line-height: 1.62;
+
+    @include mq(tablet) {
+      margin-bottom: 22px;
+      font-size: 48px;
+      line-height: 1.62;
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 25px;
+      font-size: 72px;
+      line-height: 1.08;
+    }
+  }
+
+  &__content {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.67;
+
+    @include mq(tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 18px;
+    color: $background-color;
+  }
+
+  &__img {
+    @media screen and (max-width: 620px) {
+      width: 330px;
+    }
+
+    &--thumb {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .container.hero {
@@ -31,79 +106,4 @@
   @include mq(desktop) {
     padding-bottom: 214px;
   }
-}
-
-.hero__content-wrapper {
-  max-width: 387px;
-
-  @include mq(desktop) {
-    max-width: 621px;
-  }
-}
-
-.hero__subtitle {
-  padding-top: 20px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.35;
-
-  @include mq(tablet) {
-    font-size: 20px;
-    padding-top: 73px;
-    margin-bottom: 22px;
-  }
-
-  @include mq(desktop) {
-    padding-top: 69px;
-    margin-bottom: 13px;
-  }
-}
-
-.hero__title {
-  margin-bottom: 22px;
-  font-family: $font-family-main, sans-serif;
-  line-height: 1.08;
-  color: $main-text-color;
-  font-size: 28px;
-  line-height: 1.62;
-
-  @include mq(tablet) {
-    margin-bottom: 22px;
-    font-size: 48px;
-    line-height: 1.62;
-  }
-
-  @include mq(desktop) {
-    margin-bottom: 25px;
-    font-size: 72px;
-    line-height: 1.08;
-  }
-}
-
-.hero__content {
-  margin-bottom: 50px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.67;
-
-  @include mq(tablet) {
-    font-size: 18px;
-  }
-}
-
-.hero__btn {
-  font-weight: 700;
-  font-size: 18px;
-  color: $background-color;
-}
-
-.hero__img {
-  @media screen and (max-width: 620px) {
-    width: 330px;
-  }
-}
-
-.hero__img--thumb {
-  display: flex;
-  justify-content: center;
 }
