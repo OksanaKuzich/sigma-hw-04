@@ -1,8 +1,6 @@
 let colors = ['#bb0000', '#ffffff'];
 
 export default function frame(end) {
-  // let end = time + 5000;
-
   confetti({
     particleCount: 2,
     angle: 60,
