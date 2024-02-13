@@ -6,5 +6,4 @@ import './form';
 import './service';
 import './inaction';
 import './preloader';
-import './weather/index';
 import './mobileMenu';
